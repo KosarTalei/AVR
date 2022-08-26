@@ -1,0 +1,30 @@
+The function named AreaA in area.asm, receives the number of vertices and an array of the vertex
+coordinates and returns the final result and a “Makefile” to build the project.
+The file “main.c” uses a function called AreaC to calculate the area on its
+own. 
+
+In two versions:
+A 32-bit version using the floating-point coprocessor (x87)
+instructions.
+A 64-bit version using the SSE or AVX SIMD instructions.
+
+Area Algorithem:
+https://web.archive.org/web/20100405070507/http://valis.cs.uiuc.edu/
+~sariel/research/CG/compgeom/msg00831.html
+
+Constraints:
+x0 = 0, y0 = 0
+2 < n < 100
+-100.0 < x, y < 100
+
+Example:
+
+Input:
+40
+0
+0 2
+3 3
+3 0
+
+Output:
+7.500000
